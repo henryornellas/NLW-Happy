@@ -1,0 +1,116 @@
+#page-landing {
+  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%) no-repeat;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+}
+
+#container {
+  margin: auto;
+  width: min(70%, 100rem);
+}
+
+.location, h1, .visit p {
+  height: 16vh;
+}
+
+.visit a {
+  width: 5rem;
+  height: 5rem;
+  background: #ffd666;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  animation-delay: 250ms;
+  transition: background .5s;
+}
+
+.visit a:hover {
+  background: #96ffef;
+}
+
+.autoria {
+  position: absolute;
+  bottom: 0.5rem;
+  right: clamp(30%, 40%, 50%);
+  font-style: italic;
+  font-weight: 100;
+  font-size: x-small;
+}
+/**********************ANIMAÇÕES**********************/
+#logo {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+  font-size: clamp(2rem, 5vw, 6rem);
+}
+
+.visit p {
+  animation-delay: 200ms;
+}
+
+/***************************DESKTOP********************/
+@media (min-width: 760px) {
+  #container {
+    background: url('../Imagens/bg.svg') no-repeat 80% / clamp(25rem, 35vw, 40rem);
+    padding: 3rem 1rem;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .location, h1, .visit p {
+    height: initial;
+    text-align: initial;
+  }
+
+  .location {
+    text-align: right;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  main h1 {
+    font-weight: bold;
+    line-height: .88;
+    width: min(300px, 80%);
+    margin: clamp(5%, 9vh, 8%) 0 2rem;
+  }
+
+  .visit p {
+    line-height: 1.4;
+    width: clamp(15rem, 20vw, 20rem);
+    font-size: 1.4rem;
+  }
+
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .visit a {
+    margin: initial;
+  }
+
+  .autoria {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    font-style: italic;
+    font-size: x-small;
+    font-weight: 100;
+  }
+}

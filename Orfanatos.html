@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontre Orfanatos</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+  <link rel="icon" href='Imagens/logo-icon.png'>
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <link rel="stylesheet" href="CSS/page-orfanatos.css">
+  <link rel="stylesheet" href="CSS/animações.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+<body>
+  <div id="page-orfanatos">
+    <aside class="coluna-esquerda animate-right">
+      <header>
+
+        <img src="Imagens/map-marker.svg" alt="Logo Happy">
+
+        <h2>Visite um orfanato no mapa!</h2>
+
+        <p>Muitas crianças estão esperando sua visita! :)</p>
+      </header>
+      <footer>
+        <strong>Araguari</strong>
+        <p>Minas Gerais</p>
+      </footer>
+    </aside>
+
+    <div id="mapid"> </div>
+
+    <a href="criar-orfanatos.html" class="adicionar-orfanato" title="Adicionar Orfanato">
+      <img src="Imagens/plus.svg" alt="Adicionar Orfanato"></a>
+
+  </div>
+
+  <script src="JavaScript/page-orfanatos.js"> </script>
+    </body>
+
+</html>
